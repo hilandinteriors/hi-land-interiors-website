@@ -1,0 +1,167 @@
+.main {
+  padding-top: 100px; /* Space for navbar */
+  background: radial-gradient(circle at top right, rgba(230, 126, 34, 0.05), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(230, 126, 34, 0.05), transparent 40%);
+  min-height: 100vh;
+}
+
+.quoteSection {
+  padding: 4rem 0 8rem 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Form Styles */
+.formContainer {
+  padding: 2.5rem;
+  border-radius: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+}
+
+/* Bento Grid Styles */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.bentoBox {
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boxLarge {
+  grid-column: span 2;
+  align-items: flex-start;
+}
+
+.boxAccent {
+  background: var(--accent-gold);
+  color: white;
+  border: none;
+}
+
+.boxAccent h3 {
+  color: white;
+}
+
+.bentoBox h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.bentoBox p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.textLink {
+  margin-top: 1rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.boxAccent .textLink {
+  color: white;
+}
+
+.bentoPhone {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.bentoSocials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bentoSocials a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.bentoSocials a:hover {
+  color: var(--accent-gold);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+  .boxLarge {
+    grid-column: 1;
+  }
+}

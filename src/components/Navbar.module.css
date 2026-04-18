@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.scrolled {
+  padding: 0.25rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  object-fit: contain;
+  max-height: 60px;
+  width: auto;
+  transition: max-height 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+.scrolled .logoImage {
+  max-height: 40px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.link {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--accent-gold);
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* simple mobile hide for now */
+  }
+  
+  .logoImage {
+    max-height: 30px;
+  }
+  
+  .navContainer {
+    padding: 0 1rem;
+  }
+  
+  .ctaButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

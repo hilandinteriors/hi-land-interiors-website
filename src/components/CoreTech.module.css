@@ -1,0 +1,93 @@
+.section {
+  padding: var(--section-padding);
+  background-color: var(--bg-card); /* Light background */
+  color: var(--text-primary);
+  position: relative;
+}
+
+.section .section-title {
+  color: var(--text-primary);
+}
+
+.section .section-subtitle {
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-dark); /* Forest Green */
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.layerList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.layerItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.layerNumber {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-warm); /* Warm Oak Number */
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.layerItem h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.layerItem p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .imageWrapper {
+    height: 400px;
+    order: -1;
+  }
+}

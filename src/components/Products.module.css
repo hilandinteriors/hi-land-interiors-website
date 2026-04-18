@@ -1,0 +1,104 @@
+.section {
+  padding: var(--section-padding);
+  background-color: var(--bg-card);
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.subheading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+.featureItem h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.featureItem p {
+  color: var(--text-secondary);
+}
+
+.accessoriesCard, .panelsCard {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--bg-dark);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 0 8px 8px 0;
+}
+
+.accessoriesCard h4, .panelsCard h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.accessoriesCard p, .panelsCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .imageWrapper {
+    height: 400px;
+  }
+}
