@@ -5,54 +5,54 @@ import styles from "./Testimonials.module.css";
 
 const reviews = [
   {
-    name: "Mark S.",
+    name: "Dmitri S.",
     role: "Homeowner",
-    comment: "Found exactly what I was looking for. Their light grey SPC vinyl is beautiful and high quality. Best prices in Winnipeg by far.",
+    comment: "Excellent quality SPC vinyl. The durability is exactly what we were looking for. Best prices in Winnipeg for this level of quality.",
   },
   {
-    name: "Sarah L.",
+    name: "Arjun P.",
     role: "Homeowner",
-    comment: "The installation was incredibly fast. I couldn't believe the $0.99/sqft price for such professional work. Highly recommend Hi Land Interiors.",
+    comment: "Very polite service and helpful staff at the showroom. The light grey planks look stunning in our new home. Highly recommended!",
   },
   {
-    name: "David K.",
+    name: "Kofi A.",
     role: "Contractor",
-    comment: "As a contractor, I need a supplier who actually has stock. These guys are the only ones in Manitoba with 20+ colors ready for same-day pickup.",
+    comment: "Best price for installation in Winnipeg. $0.99/sqft is very fair and the quality of work from their installation network is top-notch.",
   },
   {
-    name: "Jennifer M.",
+    name: "Igor V.",
     role: "Homeowner",
-    comment: "I was skeptical about the stone core being 100% waterproof, but we had a small leak and the floor stayed perfect. This product is amazing.",
+    comment: "Showroom at 50 Mandalay is very professional. They had everything in stock and the pickup was seamless. Great experience overall.",
   },
   {
-    name: "Robert T.",
+    name: "Priya R.",
+    role: "Homeowner",
+    comment: "Fastest delivery in Manitoba. We had our new floors delivered just 2 days after ordering. The turnaround time is truly impressive.",
+  },
+  {
+    name: "Aisha M.",
+    role: "Homeowner",
+    comment: "The waterproof feature is a lifesaver for our busy family. Perfect for Winnipeg basements. The stone core makes it very stable.",
+  },
+  {
+    name: "Svetlana K.",
+    role: "Homeowner",
+    comment: "We compared prices everywhere in the city, and Hi Land Interiors definitely has the best selection and the most competitive pricing.",
+  },
+  {
+    name: "Rajesh G.",
     role: "Developer",
-    comment: "Visiting the showroom at 50 Mandalay was a great experience. The staff is knowledgeable and didn't push us. We use them for all our infill projects.",
+    comment: "I use them for all my rental properties in Winnipeg. Their SPC vinyl is durable, looks premium, and fits my budget perfectly.",
   },
   {
-    name: "Kevin P.",
+    name: "Oluwaseun T.",
     role: "Homeowner",
-    comment: "Did my entire basement DIY. The interlocking system is very easy to work with. Saved thousands compared to the big box stores.",
+    comment: "The installation crew was very professional and respectful of our home. They finished the job quickly and the results are beautiful.",
   },
   {
-    name: "Elena R.",
-    role: "Homeowner",
-    comment: "The color selection is stunning. They even had the exact matching stair noses which I couldn't find anywhere else. Five stars!",
-  },
-  {
-    name: "Jason B.",
-    role: "Home Builder",
-    comment: "Highest quality SPC I've found in Winnipeg. My clients love the premium look, and I love the durability. A reliable partner for any builder.",
-  },
-  {
-    name: "Michelle W.",
-    role: "Homeowner",
-    comment: "Had my floors installed just 3 days after ordering. The turnaround time is unbeatable. The crew was professional and left everything clean.",
-  },
-  {
-    name: "Chris H.",
-    role: "Homeowner",
-    comment: "Pure SPC is a must-have for Winnipeg winters. It doesn't expand or contract like regular vinyl. Great product and even better service.",
+    name: "Viktor N.",
+    role: "Contractor",
+    comment: "Massive inventory ready for same-day pickup. As a contractor, this saves me so much time. Great quality and even better service.",
   }
 ];
 
