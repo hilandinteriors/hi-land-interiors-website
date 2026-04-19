@@ -103,6 +103,17 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
+
+        <div className={styles.ctaWrapper}>
+          <a 
+            href="https://www.google.com/search?q=Hi+Land+Interiors+Winnipeg#lrd=0x52ea76b00afc1dc3:0x6331a96ed0851888,3" 
+            target="_blank" 
+            rel="noreferrer" 
+            className={`btn-secondary ${styles.reviewBtn} animate-on-scroll delay-300`}
+          >
+            <span className={styles.googleIcon}>G</span> Love our floors? Review us on Google
+          </a>
+        </div>
       </div>
     </section>
   );

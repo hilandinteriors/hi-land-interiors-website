@@ -52,7 +52,17 @@ export default function QuotePage() {
                 <div className={styles.successMessage}>
                   <h3>Thank you for reaching out!</h3>
                   <p>We have received your request and will get back to you within 24 hours.</p>
-                  <button onClick={() => setStatus("idle")} className={`btn-primary ${styles.resetBtn}`}>Submit Another Request</button>
+                  <div className={styles.successActions}>
+                    <button onClick={() => setStatus("idle")} className={`btn-primary ${styles.resetBtn}`}>Submit Another Request</button>
+                    <a 
+                      href="https://www.google.com/search?q=Hi+Land+Interiors+Winnipeg#lrd=0x52ea76b00afc1dc3:0x6331a96ed0851888,3" 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className={`btn-secondary ${styles.reviewBtnSuccess}`}
+                    >
+                      Rate us on Google
+                    </a>
+                  </div>
                 </div>
               ) : (
                 <form className={styles.form} onSubmit={handleSubmit}>
