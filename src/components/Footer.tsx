@@ -42,7 +42,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/profile.php?id=61570692601234" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>Facebook</a>
           </div>
           
-          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className={`btn-primary ${styles.cta}`}>Get Directions</a>
+          <a href="https://maps.google.com/?q=50+Mandalay+Drive,+Winnipeg,+MB" target="_blank" rel="noopener noreferrer" className={`btn-primary ${styles.cta}`}>Get Directions</a>
         </div>
         
         <div className={`${styles.mapContainer} animate-on-scroll delay-200`}>

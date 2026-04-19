@@ -7,6 +7,7 @@ import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,16 +31,30 @@ export default function Navbar() {
           />
         </Link>
         
-        <div className={styles.navLinks}>
-          <Link href="/#products" className={styles.link}>Products</Link>
-          <Link href="/#installation" className={styles.link}>Installation</Link>
-          <Link href="/#portfolio" className={styles.link}>Portfolio</Link>
-          <Link href="/#b2b" className={styles.link}>B2B Supply</Link>
+        <div className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
+          <Link href="/#products" className={styles.link} onClick={() => setIsOpen(false)}>Products</Link>
+          <Link href="/#installation" className={styles.link} onClick={() => setIsOpen(false)}>Installation</Link>
+          <Link href="/#portfolio" className={styles.link} onClick={() => setIsOpen(false)}>Portfolio</Link>
+          <Link href="/#b2b" className={styles.link} onClick={() => setIsOpen(false)}>B2B Supply</Link>
+          <a href="tel:2049520254" className={`btn-primary ${styles.mobileCta}`}>
+            Call Us Now
+          </a>
         </div>
         
-        <a href="tel:2049520254" className={`btn-primary ${styles.ctaButton}`}>
-          Call Us Now
-        </a>
+        <div className={styles.rightNav}>
+          <a href="tel:2049520254" className={`btn-primary ${styles.ctaButton}`}>
+            Call Us Now
+          </a>
+          <button 
+            className={`${styles.hamburger} ${isOpen ? styles.open : ""}`} 
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </nav>
   );

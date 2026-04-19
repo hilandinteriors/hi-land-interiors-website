@@ -59,9 +59,86 @@
   font-size: 0.9rem;
 }
 
+.rightNav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--text-primary);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.mobileCta {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navLinks {
-    display: none; /* simple mobile hide for now */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .navLinks.active {
+    transform: translateX(0);
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+
+  .mobileCta {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
   }
   
   .logoImage {
@@ -73,7 +150,6 @@
   }
   
   .ctaButton {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    display: none;
   }
 }
