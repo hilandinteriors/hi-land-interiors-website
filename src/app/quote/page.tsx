@@ -60,7 +60,15 @@ export default function QuotePage() {
                       rel="noreferrer" 
                       className={`btn-secondary ${styles.reviewBtnSuccess}`}
                     >
-                      Rate us on Google
+                      Review on Google
+                    </a>
+                    <a 
+                      href="https://maps.apple.com/?q=Hi+Land+Interiors+Winnipeg" 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className={`btn-secondary ${styles.appleBtnSuccess}`}
+                    >
+                      Review on Apple Maps
                     </a>
                   </div>
                 </div>

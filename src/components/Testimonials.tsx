@@ -111,7 +111,15 @@ export default function Testimonials() {
             rel="noreferrer" 
             className={`btn-secondary ${styles.reviewBtn} animate-on-scroll delay-300`}
           >
-            <span className={styles.googleIcon}>G</span> Love our floors? Review us on Google
+            <span className={styles.googleIcon}>G</span> Review on Google
+          </a>
+          <a 
+            href="https://maps.apple.com/?q=Hi+Land+Interiors+Winnipeg" 
+            target="_blank" 
+            rel="noreferrer" 
+            className={`btn-secondary ${styles.appleBtn} animate-on-scroll delay-400`}
+          >
+            <span className={styles.appleIcon}></span> Review on Apple Maps
           </a>
         </div>
       </div>
