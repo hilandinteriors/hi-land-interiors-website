@@ -52,7 +52,7 @@ export default function B2BHub() {
         <div className={`${styles.imageContainer} animate-on-scroll delay-200`}>
           <Image
             src="/images/warehouse_forklift_1776535839835.png"
-            alt="Massive Flooring Inventory Warehouse with Forklift"
+            alt="Massive SPC Vinyl Flooring Inventory in our Winnipeg Warehouse"
             fill
             className={styles.image}
           />

@@ -31,7 +31,7 @@ export default function Hero() {
       <div className={styles.heroBackground}>
         <Image
           src="/images/hero_flooring_light_1776535022100.png"
-          alt="Premium Light Vinyl Flooring in Winnipeg"
+          alt="Luxury SPC Vinyl Flooring Showroom Winnipeg - Hi Land Interiors"
           fill
           priority
           className={styles.backgroundImage}
@@ -46,7 +46,7 @@ export default function Hero() {
             WINNIPEG'S BIGGEST VINYL FLOORING INVENTORY <br/> ONLY AT HI LAND INTERIORS
           </h1>
           <p className={`${styles.subtitle} animate-on-scroll delay-200`}>
-            Proudly serving Manitoba from our Winnipeg showroom. Engineered with a solid stone core — 100% waterproof, exceptionally stable, and built for our harsh Canadian winters.
+            Proudly serving Manitoba from our Winnipeg showroom. We offer the best vinyl flooring installation in Winnipeg. Engineered with a solid stone core — 100% waterproof, exceptionally stable, and built for our harsh Canadian winters.
           </p>
           <div className={`${styles.priceBadge} animate-on-scroll delay-200`}>
             <strong>Best Pricing in Winnipeg</strong> • Starting at just $1.59 per sqft

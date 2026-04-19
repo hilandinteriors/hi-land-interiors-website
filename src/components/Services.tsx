@@ -29,10 +29,10 @@ export default function Services() {
     <section id="installation" className={styles.section} ref={sectionRef}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h2 className="section-title animate-on-scroll">Full-Service Installation Solutions</h2>
+          <h2 className="section-title animate-on-scroll">Professional Flooring Installation in Winnipeg</h2>
           <p className={`${styles.description} animate-on-scroll delay-100`}>
-            We don't just supply premium flooring; we ensure it's installed flawlessly. 
-            Access our network of elite, vetted professional installers and experience a seamless transformation.
+            We don't just supply premium materials; we provide the most reliable flooring installation in Winnipeg. 
+            Access our network of elite, vetted professional installers and experience a seamless transformation for your home or business.
           </p>
           
           <div className={`${styles.pricingCard} animate-on-scroll delay-200`}>

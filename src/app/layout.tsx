@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Hi Land Interiors",
     images: [
       {
-        url: "/images/hero-bg.jpg", // Using the hero image as default OG image
+        url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "Hi Land Interiors Showroom",
@@ -24,20 +24,72 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  alternates: {
+    canonical: "https://www.hilandinteriors.ca",
+  },
 };
 
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FlooringBusiness",
+    "name": "Hi Land Interiors",
+    "image": "https://www.hilandinteriors.ca/images/logo.png",
+    "@id": "https://www.hilandinteriors.ca",
+    "url": "https://www.hilandinteriors.ca",
+    "telephone": "+12049520254",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "50 Mandalay Drive",
+      "addressLocality": "Winnipeg",
+      "addressRegion": "MB",
+      "postalCode": "R2X 2Z2",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.934336,
+      "longitude": -97.168541
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61570692601234",
+      "https://www.instagram.com/hilandinteriors/",
+      "https://www.tiktok.com/@hilandinteriors"
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
