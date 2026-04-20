@@ -6,6 +6,7 @@ import ColorGrid from "@/components/ColorGrid";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import B2BHub from "@/components/B2BHub";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <ColorGrid />
       <Portfolio />
       <Testimonials />
+      <FAQ />
       <CoreTech />
       <Services />
       <B2BHub />
