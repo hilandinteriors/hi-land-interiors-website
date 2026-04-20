@@ -6,19 +6,30 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Hi Land Interiors | Premium Vinyl Flooring in Winnipeg",
-  description: "Winnipeg's largest inventory of 100% Pure SPC Vinyl Flooring. 100% waterproof, highly durable, and professionally installed starting at $0.99/sq. ft.",
+  title: "Hi Land Interiors | Best Vinyl Flooring Store & SPC Vinyl in Winnipeg",
+  description: "Winnipeg's #1 destination for Luxury Vinyl Plank (LVP) and SPC flooring. 100% waterproof, commercial-grade durability, and professional installation. Visit our Winnipeg flooring showroom today.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Hi Land Interiors",
+  },
+  keywords: ["flooring store winnipeg", "spc vinyl winnipeg", "luxury vinyl plank winnipeg", "lvp flooring winnipeg", "waterproof flooring winnipeg", "flooring installation winnipeg"],
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: true,
+  },
   openGraph: {
-    title: "Hi Land Interiors | Premium Vinyl Flooring in Winnipeg",
-    description: "Winnipeg's largest inventory of 100% Pure SPC Vinyl Flooring. 100% waterproof, highly durable, and professionally installed starting at $0.99/sq. ft.",
+    title: "Hi Land Interiors | Best Vinyl Flooring Store & SPC Vinyl in Winnipeg",
+    description: "Winnipeg's premium destination for Luxury Vinyl Plank (LVP) and SPC flooring. 100% waterproof and professionally installed. Visit our showroom.",
     url: "https://www.hilandinteriors.ca",
     siteName: "Hi Land Interiors",
     images: [
       {
-        url: "/images/hero-bg.jpg",
+        url: "/images/hero_flooring_light_1776535022100.png",
         width: 1200,
         height: 630,
-        alt: "Hi Land Interiors Showroom",
+        alt: "Hi Land Interiors Winnipeg Flooring Store",
       },
     ],
     locale: "en_CA",
@@ -27,6 +38,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.hilandinteriors.ca",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/images/logo.png",
+  },
+};
+
+export const viewport = {
+  themeColor: "#121212",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 import Navbar from "@/components/Navbar";

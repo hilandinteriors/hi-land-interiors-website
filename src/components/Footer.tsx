@@ -71,6 +71,11 @@ export default function Footer() {
           ></iframe>
         </div>
       </div>
+      <div className={styles.serviceAreas}>
+        <div className="container">
+          <p><strong>Serving all Winnipeg Neighborhoods:</strong> Bridgwater, Linden Woods, Sage Creek, River Heights, Tuxedo, Charleswood, St. Vital, Transcona, Seven Oaks, and surrounding Manitoba communities.</p>
+        </div>
+      </div>
       <div className={styles.copyright}>
         <p>&copy; {new Date().getFullYear()} Hi Land Interiors. <br/><span>Architectural Flooring Solutions.</span></p>
       </div>

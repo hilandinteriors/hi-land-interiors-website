@@ -64,7 +64,7 @@ export default function Comparison() {
         <div className={styles.header}>
           <h2 className="section-title animate-on-scroll">The Superior Choice</h2>
           <p className="section-subtitle animate-on-scroll delay-100">
-            See why architectural professionals and Winnipeg homeowners are switching from laminate and hardwood to Pure SPC Vinyl.
+            Compare <strong>Laminate vs. Vinyl</strong>: See why architectural professionals and Winnipeg homeowners are switching to Pure SPC Vinyl.
           </p>
         </div>
 
