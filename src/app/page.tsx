@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import TrustBanner from "@/components/TrustBanner";
 import Products from "@/components/Products";
+import Comparison from "@/components/Comparison";
 import CoreTech from "@/components/CoreTech";
 import ColorGrid from "@/components/ColorGrid";
 import Services from "@/components/Services";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <TrustBanner />
       <Products />
+      <Comparison />
       <ColorGrid />
       <Portfolio />
       <Testimonials />

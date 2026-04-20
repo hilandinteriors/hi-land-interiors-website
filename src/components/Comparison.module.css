@@ -1,0 +1,115 @@
+.section {
+  padding: 8rem 0;
+  background-color: #fcfcfc;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-bottom: 5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+  padding: 2rem;
+  background-color: var(--text-primary);
+  color: white;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.table th:first-child {
+  text-align: left;
+  background-color: #1a1a1a;
+}
+
+.highlight {
+  background-color: var(--accent-gold) !important;
+}
+
+.table td {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-light);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.table td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-primary);
+  background-color: rgba(18, 18, 18, 0.02);
+}
+
+.check { color: #27ae60; font-weight: 800; font-size: 1.25rem; }
+.cross { color: #e74c3c; font-weight: 800; font-size: 1.25rem; }
+.neutral { color: var(--text-secondary); font-weight: 400; }
+
+.visualComparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.visualText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visualText h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.compareCard {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.imageLabel {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: var(--accent-gold);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .visualComparison {
+    grid-template-columns: 1fr;
+  }
+  .compareCard {
+    height: 300px;
+  }
+}

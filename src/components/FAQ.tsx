@@ -17,8 +17,8 @@ const faqs = [
     answer: "Our main showroom and warehouse are located at 50 Mandalay Drive, Winnipeg, MB. We are open for both professional contractors and homeowners to view our massive inventory in person.",
   },
   {
-    question: "Is your SPC Vinyl flooring durable for large dogs or heavy traffic?",
-    answer: "Absolutely. Our Pure SPC flooring features a heavy-duty wear layer that is scratch-resistant and highly durable, making it perfect for high-traffic areas, kids, and large pets.",
+    question: "Is SPC Vinyl suitable for homes with large pets or active families?",
+    answer: "Absolutely. Our SPC Vinyl is engineered with a high-density stone core and a 20 mil commercial-grade wear layer. It is specifically designed to resist deep scratches from large dogs, high-impact traffic from kids, and the heavy furniture typical of a modern Winnipeg home.",
   },
   {
     question: "Can I pick up my order on the same day?",
