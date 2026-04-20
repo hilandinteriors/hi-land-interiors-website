@@ -30,10 +30,11 @@ export default function Hero() {
     <section className={styles.hero} ref={heroRef}>
       <div className={styles.heroBackground}>
         <Image
-          src="/images/hero_flooring_light_1776535022100.png"
-          alt="Luxury SPC Vinyl Flooring Showroom Winnipeg - Hi Land Interiors"
+          src="/images/hero_4k_luxury_flooring_1776721494102.png"
+          alt="Premium SPC Vinyl Flooring Store Winnipeg - Hi Land Interiors"
           fill
           priority
+          quality={100}
           className={styles.backgroundImage}
         />
         <div className={styles.overlay}></div>
