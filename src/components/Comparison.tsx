@@ -99,7 +99,7 @@ export default function Comparison() {
               <strong> Hi Land Pure SPC</strong> is built with a stone-polymer core. It is inorganic, meaning it cannot 
               rot, swell, or support mold growth—even in a flooded basement.
             </p>
-            <div className={styles.gold-thread}></div>
+            <div className="gold-thread"></div>
           </div>
 
           <div className={`${styles.imageGrid} animate-on-scroll delay-200`}>
