@@ -53,8 +53,8 @@ export default function Hero() {
               Winnipeg Installation starting at $0.99/sq. ft.
             </div>
             <div className={`${styles.ctaGroup} animate-on-scroll delay-300`}>
-              <Link href="/quote" className="btn-primary">Reserve Your Quote</Link>
-              <Link href="/#portfolio" className="btn-secondary">View Showcase</Link>
+              <Link href="/quote" className="btn-primary">Get Wholesale Quote</Link>
+              <Link href="/#products" className="btn-secondary">In-Stock Colors</Link>
             </div>
           </div>
         </div>

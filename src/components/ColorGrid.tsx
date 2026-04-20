@@ -29,13 +29,13 @@ export default function ColorGrid() {
     <section id="colors" className={styles.section} ref={sectionRef}>
       <div className={`container ${styles.container}`}>
         <div className="animate-on-scroll">
-          <h2 className="section-title">A Spectrum of Possibilities</h2>
+          <h2 className="section-title">LIVE IN-STOCK GALLERY</h2>
           <p className="section-subtitle">
-            From sleek Grey and versatile Dualtone to rich classic Brown and extremely dark Espresso Brown, explore our comprehensive range of high-definition wood prints.
+            Skip the 6-week wait times. All 24 signature colors are stocked in our Winnipeg warehouse and ready for immediate professional installation or same-day pickup.
           </p>
         </div>
         
-        <div className={`${styles.displayImageContainer} animate-on-scroll delay-100`}>
+        <div className={`${styles.displayImageContainer} animate-on-scroll delay-100 bento-card`}>
           <Image 
             src="/images/massive_color_grid_1776540284792.png" 
             alt="Physical flooring color samples showing over 20 options" 
@@ -43,8 +43,16 @@ export default function ColorGrid() {
             height={400}
             className={styles.displayImage}
           />
+          <div className={styles.stockBadge}>
+            <span className={styles.dot}></span> IN-STOCK TODAY
+          </div>
         </div>
 
+        <div className={`${styles.ctaContainer} animate-on-scroll delay-200`}>
+          <a href="/quote" className="btn-secondary" style={{ width: '100%', textAlign: 'center', borderColor: 'var(--accent-gold)', color: 'var(--accent-gold)' }}>
+            Check Inventory Availability & Pricing
+          </a>
+        </div>
       </div>
     </section>
   );

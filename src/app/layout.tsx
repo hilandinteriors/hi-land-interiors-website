@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Hi Land Interiors | Best Vinyl Flooring Store & SPC Vinyl in Winnipeg",
-  description: "Winnipeg's #1 destination for Luxury Vinyl Plank (LVP) and SPC flooring. 100% waterproof, commercial-grade durability, and professional installation. Visit our Winnipeg flooring showroom today.",
+  title: "Hi Land Interiors | Wholesale SPC Vinyl & Basement-Ready Flooring Winnipeg",
+  description: "Winnipeg's top-rated wholesale flooring supplier. 100% waterproof SPC vinyl specifically engineered for Manitoba basements. Professional installation starting at $0.99/sq. ft.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

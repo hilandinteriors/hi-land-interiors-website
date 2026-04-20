@@ -1,0 +1,98 @@
+.section {
+  padding: 8rem 0;
+  background-color: var(--text-primary);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.label {
+  display: inline-block;
+  color: var(--accent-gold);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+}
+
+.title span {
+  color: var(--accent-gold);
+  font-weight: 800;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pointIcon {
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+}
+
+.pointTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pointDesc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.imageContainer {
+  position: relative;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image {
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .imageContainer {
+    height: 400px;
+  }
+}

@@ -13,10 +13,11 @@
 }
 
 .displayImageContainer {
-  margin: 3rem 0;
+  position: relative;
   width: 100%;
-  border-radius: 12px;
+  margin-top: 3rem;
   overflow: hidden;
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--border-light);
 }
@@ -26,6 +27,38 @@
   height: auto;
   object-fit: cover;
   display: block;
+}
+
+.stockBadge {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: #121212;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--accent-gold);
+  z-index: 5;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #27ae60;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #27ae60;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .previewPanel {

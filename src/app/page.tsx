@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import TrustBanner from "@/components/TrustBanner";
 import Products from "@/components/Products";
 import Comparison from "@/components/Comparison";
+import LocalExpertise from "@/components/LocalExpertise";
 import CoreTech from "@/components/CoreTech";
 import ColorGrid from "@/components/ColorGrid";
 import Services from "@/components/Services";
@@ -18,6 +19,7 @@ export default function Home() {
       <TrustBanner />
       <Products />
       <Comparison />
+      <LocalExpertise />
       <ColorGrid />
       <Portfolio />
       <Testimonials />

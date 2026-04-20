@@ -27,19 +27,36 @@ export default function TrustBanner() {
   return (
     <section className={styles.section} ref={sectionRef}>
       <div className={`container ${styles.container}`}>
-        <div className={`${styles.stat} animate-on-scroll`}>
-          <span className={styles.number}>500+</span>
-          <span className={styles.label}>Manitoba Homes Transformed</span>
+        <div className={`${styles.trustItem} animate-on-scroll`}>
+          <div className={styles.icon}>🏠</div>
+          <div>
+            <span className={styles.title}>Basement Ready</span>
+            <span className={styles.label}>100% Flood-Proof Core</span>
+          </div>
         </div>
-        <div className={styles.divider} />
-        <div className={`${styles.stat} animate-on-scroll delay-100`}>
-          <span className={styles.number}>20+</span>
-          <span className={styles.label}>Colors In Stock Today</span>
+        
+        <div className={`${styles.trustItem} animate-on-scroll delay-100`}>
+          <div className={styles.icon}>🛡️</div>
+          <div>
+            <span className={styles.title}>30-Year Warranty</span>
+            <span className={styles.label}>Guaranteed Durability</span>
+          </div>
         </div>
-        <div className={styles.divider} />
-        <div className={`${styles.stat} animate-on-scroll delay-200`}>
-          <span className={styles.number}>Same Day</span>
-          <span className={styles.label}>Winnipeg Pickup Available</span>
+
+        <div className={`${styles.trustItem} animate-on-scroll delay-200`}>
+          <div className={styles.icon}>🚚</div>
+          <div>
+            <span className={styles.title}>Winnipeg In-Stock</span>
+            <span className={styles.label}>Ready for Same-Day Pickup</span>
+          </div>
+        </div>
+
+        <div className={`${styles.trustItem} animate-on-scroll delay-300`}>
+          <div className={styles.icon}>💎</div>
+          <div>
+            <span className={styles.title}>Wholesale Pricing</span>
+            <span className={styles.label}>Skip the Retail Markup</span>
+          </div>
         </div>
       </div>
     </section>
