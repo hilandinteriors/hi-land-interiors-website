@@ -36,15 +36,25 @@ export default function Navbar() {
           <Link href="/#installation" className={styles.link} onClick={() => setIsOpen(false)}>Installation</Link>
           <Link href="/#portfolio" className={styles.link} onClick={() => setIsOpen(false)}>Portfolio</Link>
           <Link href="/#b2b" className={styles.link} onClick={() => setIsOpen(false)}>B2B Supply</Link>
-          <a href="tel:2049520254" className={`btn-primary ${styles.mobileCta}`}>
-            Call Us Now
-          </a>
+          <div className={styles.mobileActions}>
+            <a href="tel:2049520254" className={`btn-secondary ${styles.mobileLink}`}>
+              Call Us
+            </a>
+            <Link href="/quote" className={`btn-primary ${styles.mobileLink}`} onClick={() => setIsOpen(false)}>
+              Get Quote
+            </Link>
+          </div>
         </div>
         
         <div className={styles.rightNav}>
-          <a href="tel:2049520254" className={`btn-primary ${styles.ctaButton}`}>
-            Call Us Now
-          </a>
+          <div className={styles.desktopActions}>
+            <a href="tel:2049520254" className={styles.phoneLink}>
+              (204) 952-0254
+            </a>
+            <Link href="/quote" className="btn-primary">
+              Get a Quote
+            </Link>
+          </div>
           <button 
             className={`${styles.hamburger} ${isOpen ? styles.open : ""}`} 
             onClick={() => setIsOpen(!isOpen)}

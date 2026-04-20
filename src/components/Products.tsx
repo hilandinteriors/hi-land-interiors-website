@@ -36,7 +36,7 @@ export default function Products() {
         </div>
 
         <div className={styles.grid}>
-          <div className={`${styles.imageWrapper} animate-on-scroll delay-100`}>
+          <div className={`${styles.imageWrapper} animate-on-scroll delay-100 bento-card`}>
             <Image
               src="/images/spc_flooring_light_details_1776535042862.png"
               alt="Close up of Light SPC Vinyl Flooring"
@@ -48,37 +48,37 @@ export default function Products() {
           <div className={styles.content}>
             <h3 className={`${styles.subheading} animate-on-scroll delay-200`}>Technical Superiority</h3>
             <ul className={styles.featureList}>
-              <li className={`${styles.featureItem} animate-on-scroll delay-300`}>
+              <li className={`${styles.featureItem} animate-on-scroll delay-300 bento-card`}>
                 <div className={styles.icon}>20M</div>
                 <div>
                   <h4>20 Mil Wear Layer</h4>
-                  <p>Maximum scratch resistance for high-traffic commercial and residential spaces.</p>
+                  <p>Architectural scratch resistance for high-traffic environments.</p>
                 </div>
               </li>
-              <li className={`${styles.featureItem} animate-on-scroll delay-300`}>
+              <li className={`${styles.featureItem} animate-on-scroll delay-300 bento-card`}>
                 <div className={styles.icon}>WP</div>
                 <div>
                   <h4>100% Waterproof</h4>
-                  <p>Perfect for kitchens, bathrooms, and basements. Never worry about spills again.</p>
+                  <p>Inherent stone stability for moisture-heavy environments.</p>
                 </div>
               </li>
-              <li className={`${styles.featureItem} animate-on-scroll delay-300`}>
+              <li className={`${styles.featureItem} animate-on-scroll delay-300 bento-card`}>
                 <div className={styles.icon}>SPC</div>
                 <div>
                   <h4>Pure SPC Core</h4>
-                  <p>Stone Plastic Composite means extreme stability and fire resistance.</p>
+                  <p>Zero recycled materials. Maximum structural integrity.</p>
                 </div>
               </li>
             </ul>
 
-            <div className={`${styles.accessoriesCard} animate-on-scroll delay-200`}>
+            <div className={`${styles.accessoriesCard} animate-on-scroll delay-200 glass bento-card`}>
               <h4>Seamless Integration</h4>
-              <p>We stock exact color-matching stair noses and reducers for a flawless, professional finish on every job.</p>
+              <p>Exact color-matching stair noses and transitions for a curated designer finish.</p>
             </div>
             
-            <div className={`${styles.panelsCard} animate-on-scroll delay-300`}>
-              <h4>Also Available: Acoustic Wall Panels</h4>
-              <p>Elevate your space with our premium selection of acoustic wall panels, designed to reduce noise and add a modern architectural touch.</p>
+            <div className={`${styles.panelsCard} animate-on-scroll delay-300 glass bento-card`}>
+              <h4>Acoustic Wall Panels</h4>
+              <p>Reduce reverberation and add architectural depth with our premium acoustic solutions.</p>
             </div>
           </div>
         </div>

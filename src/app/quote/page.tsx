@@ -47,20 +47,20 @@ export default function QuotePage() {
 
           <div className={styles.grid}>
             {/* Form Side */}
-            <div className={`glass ${styles.formContainer}`}>
+            <div className={`glass ${styles.formContainer} bento-card`}>
               {status === "success" ? (
                 <div className={styles.successMessage}>
-                  <h3>Thank you for reaching out!</h3>
-                  <p>We have received your request and will get back to you within 24 hours.</p>
+                  <h3>Request Received</h3>
+                  <p>Our concierge will reach out to you within 24 business hours.</p>
                   <div className={styles.successActions}>
-                    <button onClick={() => setStatus("idle")} className={`btn-primary ${styles.resetBtn}`}>Submit Another Request</button>
+                    <button onClick={() => setStatus("idle")} className={`btn-primary ${styles.resetBtn}`}>New Request</button>
                     <a 
                       href="https://www.google.com/search?q=Hi+Land+Interiors+Winnipeg#lrd=0x52ea76b00afc1dc3:0x6331a96ed0851888,3" 
                       target="_blank" 
                       rel="noreferrer" 
                       className={`btn-secondary ${styles.reviewBtnSuccess}`}
                     >
-                      Review on Google
+                      Rate on Google
                     </a>
                     <a 
                       href="https://maps.apple.com/?q=Hi+Land+Interiors+Winnipeg" 
@@ -68,7 +68,7 @@ export default function QuotePage() {
                       rel="noreferrer" 
                       className={`btn-secondary ${styles.appleBtnSuccess}`}
                     >
-                      Review on Apple Maps
+                      Rate on Apple
                     </a>
                   </div>
                 </div>
@@ -81,37 +81,37 @@ export default function QuotePage() {
                   
                   <div className={styles.formRow}>
                     <div className={styles.formGroup}>
-                      <label htmlFor="email">Email Address</label>
+                      <label htmlFor="email">Email</label>
                       <input type="email" id="email" name="email" placeholder="john@example.com" required />
                     </div>
                     <div className={styles.formGroup}>
-                      <label htmlFor="phone">Phone Number</label>
+                      <label htmlFor="phone">Phone</label>
                       <input type="tel" id="phone" name="phone" placeholder="(204) 555-0123" required />
                     </div>
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label htmlFor="product">Product/Service Inquiry</label>
+                    <label htmlFor="product">Project Type</label>
                     <select id="product" name="product" required>
-                      <option value="">Select an option</option>
-                      <option value="vinyl_supply">Vinyl Flooring Supply (SPC)</option>
-                      <option value="installation">Installation Services ($0.99/sq.ft)</option>
-                      <option value="both">Both Supply & Installation</option>
-                      <option value="b2b">B2B Contractor Account</option>
+                      <option value="">Select Project Type</option>
+                      <option value="vinyl_supply">Vinyl Supply Only</option>
+                      <option value="installation">Installation Services</option>
+                      <option value="both">Supply & Installation</option>
+                      <option value="b2b">Contractor/Developer Inquiry</option>
                     </select>
                   </div>
 
                   <div className={styles.formGroup}>
-                    <label htmlFor="message">Message details (Optional)</label>
-                    <textarea id="message" name="message" rows={4} placeholder="Tell us about your project..."></textarea>
+                    <label htmlFor="message">Additional Details</label>
+                    <textarea id="message" name="message" rows={4} placeholder="Describe your flooring project..."></textarea>
                   </div>
 
                   {status === "error" && (
-                    <p className={styles.errorMessage}>Oops! There was a problem submitting your form. Please try again or call us.</p>
+                    <p className={styles.errorMessage}>There was a problem. Please try again or call us.</p>
                   )}
 
                   <button type="submit" className="btn-primary" style={{ width: '100%' }} disabled={status === "submitting"}>
-                    {status === "submitting" ? "Sending..." : "Submit Request"}
+                    {status === "submitting" ? "Sending..." : "Submit Inquiry"}
                   </button>
                 </form>
               )}
@@ -119,23 +119,22 @@ export default function QuotePage() {
 
             {/* Bento Grid Side */}
             <div className={styles.bentoGrid}>
-              <div className={`${styles.bentoBox} ${styles.boxLarge} glass`}>
+              <div className={`${styles.bentoBox} ${styles.boxLarge} glass bento-card`}>
                 <h3>Our Showroom</h3>
                 <p><strong>Hi Land Interiors</strong></p>
                 <p>50 Mandalay Drive<br/>Winnipeg, MB</p>
-                <a href="https://maps.google.com/?q=50+Mandalay+Drive,+Winnipeg,+MB" target="_blank" rel="noreferrer" className={styles.textLink}>Get Directions &rarr;</a>
+                <a href="https://maps.google.com/?q=50+Mandalay+Drive,+Winnipeg,+MB" target="_blank" rel="noreferrer" className={styles.textLink}>Directions &rarr;</a>
               </div>
               
-              <div className={`${styles.bentoBox} ${styles.boxAccent} glass`}>
-                <h3>Call Directly</h3>
+              <div className={`${styles.bentoBox} ${styles.boxAccent} glass bento-card`}>
+                <h3>Direct Hotline</h3>
                 <a href="tel:2049520254" className={styles.bentoPhone}>(204) 952-0254</a>
               </div>
               
-              <div className={`${styles.bentoBox} glass`}>
-                <h3>Socials</h3>
+              <div className={`${styles.bentoBox} glass bento-card`}>
+                <h3>Digital Presence</h3>
                 <div className={styles.bentoSocials}>
                   <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-                  <a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
                   <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
                 </div>
               </div>
