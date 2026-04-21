@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     canonical: "https://www.hilandinteriors.ca",
   },
   icons: {
-    icon: "/favicon.ico",
     apple: "/images/logo.png",
   },
 };

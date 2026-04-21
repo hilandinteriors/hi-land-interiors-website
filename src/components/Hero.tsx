@@ -2,13 +2,24 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
 
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const { clientX, clientY } = e;
+      const moveX = (clientX - window.innerWidth / 2) / 50;
+      const moveY = (clientY - window.innerHeight / 2) / 50;
+      setMousePos({ x: moveX, y: moveY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -23,18 +34,26 @@ export default function Hero() {
     const elements = heroRef.current?.querySelectorAll(".animate-on-scroll");
     elements?.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      observer.disconnect();
+    };
   }, []);
 
   return (
     <section className={styles.hero} ref={heroRef}>
-      <div className={styles.heroBackground}>
+      <div 
+        className={styles.heroBackground}
+        style={{ 
+          transform: `translate(${mousePos.x}px, ${mousePos.y}px) scale(1.05)`,
+          transition: 'transform 0.2s ease-out'
+        }}
+      >
         <Image
-          src="/images/hero_4k_luxury_flooring_1776721494102.png"
+          src="/images/hero_flooring_ultra_hd.png"
           alt="Premium SPC Vinyl Flooring Store Winnipeg - Hi Land Interiors"
           fill
           priority
-          quality={100}
           className={styles.backgroundImage}
         />
         <div className={styles.overlay}></div>
@@ -54,8 +73,8 @@ export default function Hero() {
               Winnipeg Installation starting at $0.99/sq. ft.
             </div>
             <div className={`${styles.ctaGroup} animate-on-scroll delay-300`}>
-              <Link href="/quote" className="btn-primary">Get Wholesale Quote</Link>
-              <Link href="/#products" className="btn-secondary">In-Stock Colors</Link>
+              <Link href="/quote" className={`btn-primary ${styles.interactiveBtn}`}>Get Wholesale Quote</Link>
+              <Link href="/#products" className={`btn-secondary ${styles.interactiveBtn}`}>In-Stock Colors</Link>
             </div>
           </div>
         </div>

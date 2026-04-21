@@ -1,29 +1,25 @@
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: #0a0a0a;
 }
 
 .heroBackground {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
   z-index: 1;
+  will-change: transform;
 }
 
 .backgroundImage {
   object-fit: cover;
   object-position: center;
-  animation: kenBurns 20s infinite alternate ease-in-out;
-}
-
-@keyframes kenBurns {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.15); }
 }
 
 .overlay {
@@ -32,9 +28,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(18, 18, 18, 0.4) 0%,
+  background: radial-gradient(
+    circle at 20% 50%,
+    rgba(18, 18, 18, 0.6) 0%,
+    rgba(18, 18, 18, 0.2) 50%,
     transparent 100%
   );
   z-index: 2;
@@ -42,17 +39,17 @@
 
 .heroContent {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   padding: 4rem 0;
 }
 
 .heroText {
-  max-width: 650px;
-  padding: 4rem;
+  max-width: 700px;
+  padding: 5rem;
   border-radius: 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
 }
 
 .textStack {
@@ -64,8 +61,9 @@
 .badge {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: var(--accent-gold);
-  color: white;
+  background-color: #1a1a1a;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -96,11 +94,15 @@
 
 .priceTag {
   font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--accent-gold);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  background-color: var(--accent-gold);
+  padding: 0.5rem 1rem;
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: fit-content;
 }
 
 .ctaGroup {
@@ -109,23 +111,52 @@
   margin-top: 1rem;
 }
 
+.interactiveBtn {
+  position: relative;
+  overflow: hidden;
+}
+
+.interactiveBtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.interactiveBtn:hover::after {
+  left: 100%;
+}
+
 @media (max-width: 768px) {
   .hero {
-    min-height: 85vh;
+    min-height: 90vh;
     padding-top: 80px;
   }
   
   .heroText {
-    padding: 2.5rem 2rem;
+    padding: 3rem 2rem;
     margin: 0 1rem;
   }
   
   .massiveTitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .ctaGroup {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .heroBackground {
+    transform: none !important; /* Disable parallax on mobile for performance */
   }
 }
