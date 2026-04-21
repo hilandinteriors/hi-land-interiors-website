@@ -34,6 +34,7 @@ export default function CoreTech() {
               src="/images/technical_core_diagram_1776537997712.png"
               alt="SPC Stone Core Technical Diagram"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={styles.image}
             />
           </div>

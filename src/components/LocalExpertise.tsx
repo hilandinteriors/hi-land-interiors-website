@@ -68,6 +68,7 @@ export default function LocalExpertise() {
             src="/images/portfolio_living_room_1776535876535.png"
             alt="Luxury SPC Vinyl in a Winnipeg Home"
             fill
+            sizes="(max-width: 992px) 100vw, 50vw"
             className={styles.image}
           />
           <div className="glass" style={{ position: 'absolute', bottom: '2rem', right: '2rem', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.2)' }}>

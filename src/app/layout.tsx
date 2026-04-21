@@ -51,6 +51,7 @@ export const viewport = {
 };
 
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
@@ -110,6 +111,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`}>
         <Navbar />
         {children}
+        <ScrollToTop />
         <Analytics />
       </body>
     </html>

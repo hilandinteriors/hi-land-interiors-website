@@ -54,6 +54,7 @@ export default function Hero() {
           alt="Premium SPC Vinyl Flooring Store Winnipeg - Hi Land Interiors"
           fill
           priority
+          sizes="100vw"
           className={styles.backgroundImage}
         />
         <div className={styles.overlay}></div>

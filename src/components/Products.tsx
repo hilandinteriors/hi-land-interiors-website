@@ -41,6 +41,7 @@ export default function Products() {
               src="/images/spc_flooring_light_details_1776535042862.png"
               alt="Close up of Light SPC Vinyl Flooring"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={styles.image}
             />
           </div>

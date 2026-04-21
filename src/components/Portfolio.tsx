@@ -42,6 +42,7 @@ export default function Portfolio() {
                 src="/images/portfolio_living_room_1776535876535.png"
                 alt="Light Oak Flooring in Living Room"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>
@@ -57,6 +58,7 @@ export default function Portfolio() {
                 src="/images/portfolio_bedroom_1776535895288.png"
                 alt="Light Maple Flooring in Bedroom"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>
@@ -72,6 +74,7 @@ export default function Portfolio() {
                 src="/images/portfolio_kitchen_espresso_1776540531724.png"
                 alt="Espresso Brown Flooring in Kitchen"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>
@@ -87,6 +90,7 @@ export default function Portfolio() {
                 src="/images/portfolio_office_grey_1776540551618.png"
                 alt="Grey Flooring in Home Office"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>
@@ -102,6 +106,7 @@ export default function Portfolio() {
                 src="/images/portfolio_bathroom_dualtone_1776540571297.png"
                 alt="Dualtone Flooring in Bathroom"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>
@@ -117,6 +122,7 @@ export default function Portfolio() {
                 src="/images/portfolio_dining_brown_1776540594191.png"
                 alt="Rich Brown Flooring in Dining Room"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className={styles.image}
               />
               <div className={`${styles.overlay} glass-dark`}>

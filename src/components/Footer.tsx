@@ -1,18 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [showScroll, setShowScroll] = useState(false);
-
   useEffect(() => {
-    const handleScroll = () => {
-      setShowScroll(window.scrollY > 400);
-    };
-    window.addEventListener("scroll", handleScroll);
-    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -28,14 +21,9 @@ export default function Footer() {
     elements?.forEach((el) => observer.observe(el));
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       observer.disconnect();
     };
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className={styles.footer} ref={sectionRef}>
@@ -78,10 +66,6 @@ export default function Footer() {
       </div>
       <div className={styles.copyright}>
         <p>&copy; {new Date().getFullYear()} Hi Land Interiors. <br/><span>Architectural Flooring Solutions.</span></p>
-      </div>
-
-      <div className={`back-to-top ${showScroll ? 'visible' : ''}`} onClick={scrollToTop}>
-        ↑
       </div>
     </footer>
   );
