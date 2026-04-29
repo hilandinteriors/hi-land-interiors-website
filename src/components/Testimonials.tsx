@@ -90,21 +90,22 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {reviews.map((review, index) => (
-            <div 
-              key={index} 
-              className={`${styles.card} glass animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}
-              style={{ transitionDelay: `${index * 50}ms` }}
-            >
-              <div className={styles.stars}>★★★★★</div>
-              <p className={styles.comment}>"{review.comment}"</p>
-              <div className={styles.footer}>
-                <span className={styles.author}>{review.name}</span>
-                <span className={styles.badge}>{review.role}</span>
+        <div className={`${styles.marqueeWrapper} animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}>
+          <div className={styles.marquee}>
+            {[...reviews, ...reviews].map((review, index) => (
+              <div 
+                key={index} 
+                className={`${styles.card} glass`}
+              >
+                <div className={styles.stars}>★★★★★</div>
+                <p className={styles.comment}>"{review.comment}"</p>
+                <div className={styles.footer}>
+                  <span className={styles.author}>{review.name}</span>
+                  <span className={styles.badge}>{review.role}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className={styles.ctaWrapper}>

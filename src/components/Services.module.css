@@ -46,7 +46,13 @@
   border: 1px solid rgba(212, 175, 55, 0.3);
   margin-bottom: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1.05); }
+  50% { transform: translateY(-15px) scale(1.05); }
+  100% { transform: translateY(0) scale(1.05); }
 }
 
 .priceHeader {

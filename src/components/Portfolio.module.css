@@ -40,30 +40,45 @@
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   color: white;
-  transform: translateY(10px);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .portfolioItem:hover .overlay {
-  transform: translateY(0);
   opacity: 1;
 }
 
 .overlay h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
   color: white;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
 }
 
 .overlay p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
+  color: var(--accent-gold);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s;
+}
+
+.portfolioItem:hover .overlay h3,
+.portfolioItem:hover .overlay p {
+  transform: translateY(0);
 }
 
 @media (max-width: 992px) {
