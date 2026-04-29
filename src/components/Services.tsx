@@ -29,7 +29,7 @@ export default function Services() {
     <section id="installation" className={styles.section} ref={sectionRef}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h2 className={`section-title animate-on-scroll ${styles.title}`}>Professional Flooring Installation in Winnipeg</h2>
+          <h2 className="section-title animate-on-scroll">Professional Flooring Installation in Winnipeg</h2>
           <p className={`${styles.description} animate-on-scroll delay-100`}>
             We don't just supply premium materials; we provide the most reliable <strong>flooring installation in Winnipeg</strong>. 
             Access our network of elite, vetted professional installers. We service all areas including Bridgwater, Linden Woods, River Heights, Transcona, St. Vital, and surrounding Manitoba communities.
