@@ -72,6 +72,12 @@ export default function Products() {
               </li>
             </ul>
 
+            <div className="animate-on-scroll delay-400" style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+              <Link href="/basement-flooring-winnipeg" className="btn-secondary" style={{ display: 'inline-block' }}>
+                Why SPC is the only choice for Winnipeg Basements
+              </Link>
+            </div>
+
             <div className={`${styles.accessoriesCard} animate-on-scroll delay-200 glass bento-card`}>
               <h4>Seamless Integration</h4>
               <p>Exact color-matching stair noses and transitions for a curated designer finish.</p>

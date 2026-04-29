@@ -59,8 +59,11 @@ export default function Services() {
             </div>
           </div>
           
-          <div className="animate-on-scroll delay-300">
+          <div className="animate-on-scroll delay-300" style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/quote" className={`btn-primary ${styles.cta}`}>Request Your Free Quote</Link>
+            <Link href="/winnipeg-flooring-installation-costs" className={`btn-secondary ${styles.cta}`}>
+              View Transparent Pricing Guide
+            </Link>
           </div>
         </div>
       </div>

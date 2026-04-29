@@ -67,9 +67,6 @@ export const metadata: Metadata = {
     description: "Winnipeg's largest in-stock flooring store. 100% waterproof SPC vinyl. 20+ colors, same-day pickup. Installation from $0.99/sq.ft.",
     images: ["/images/hero_flooring_ultra_hd.png"],
   },
-  alternates: {
-    canonical: "https://www.hilandinteriors.ca",
-  },
   icons: {
     apple: "/images/logo.png",
   },

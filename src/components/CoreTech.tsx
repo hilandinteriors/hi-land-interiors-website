@@ -79,6 +79,13 @@ export default function CoreTech() {
                 </div>
               </div>
             </div>
+            </div>
+            
+            <div className="animate-on-scroll delay-400" style={{ marginTop: '2rem' }}>
+              <Link href="/spc-vinyl-flooring-winnipeg" className="btn-primary" style={{ display: 'inline-block' }}>
+                Learn more about SPC Vinyl
+              </Link>
+            </div>
           </div>
         </div>
       </div>
