@@ -48,10 +48,27 @@
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s ease;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--accent-gold);
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 .link:hover {
   color: var(--accent-gold);
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .ctaButton {

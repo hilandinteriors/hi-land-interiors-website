@@ -57,11 +57,26 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease, background 0.3s ease;
+  background: rgba(255,255,255,0.02);
+}
+
+.point:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.05);
 }
 
 .pointIcon {
   font-size: 1.5rem;
   color: var(--accent-gold);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.point:hover .pointIcon {
+  transform: scale(1.2) rotate(15deg);
 }
 
 .pointTitle {

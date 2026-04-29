@@ -40,22 +40,22 @@ export default function LocalExpertise() {
           </p>
           
           <div className={styles.points}>
-            <div className={`${styles.point} animate-on-scroll delay-300`}>
+            <div className={`${styles.point} animate-on-scroll delay-300 glass bento-card`}>
               <span className={styles.pointIcon}>❄️</span>
               <span className={styles.pointTitle}>Zero Thermal Shift</span>
               <p className={styles.pointDesc}>Will not expand or contract during Winnipeg's extreme temperature swings.</p>
             </div>
-            <div className={`${styles.point} animate-on-scroll delay-300`}>
+            <div className={`${styles.point} animate-on-scroll delay-300 glass bento-card`}>
               <span className={styles.pointIcon}>💧</span>
               <span className={styles.pointTitle}>Basement Ready</span>
               <p className={styles.pointDesc}>100% waterproof stone core. The ultimate defense against basement flooding.</p>
             </div>
-            <div className={`${styles.point} animate-on-scroll delay-400`}>
+            <div className={`${styles.point} animate-on-scroll delay-400 glass bento-card`}>
               <span className={styles.pointIcon}>☀️</span>
               <span className={styles.pointTitle}>UV Resistant</span>
               <p className={styles.pointDesc}>Advanced wear layer prevents fading from high-exposure floor-to-ceiling windows.</p>
             </div>
-            <div className={`${styles.point} animate-on-scroll delay-400`}>
+            <div className={`${styles.point} animate-on-scroll delay-400 glass bento-card`}>
               <span className={styles.pointIcon}>🐾</span>
               <span className={styles.pointTitle}>Impact Proof</span>
               <p className={styles.pointDesc}>Highest-rated impact resistance for active families and large pets.</p>

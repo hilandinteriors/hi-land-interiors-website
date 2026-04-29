@@ -38,8 +38,27 @@
   background-color: #1a1a1a;
 }
 
+.table tbody tr {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.table tbody:hover tr {
+  opacity: 0.6;
+}
+
+.table tbody tr:hover {
+  opacity: 1;
+  background-color: rgba(212, 175, 55, 0.05);
+}
+
+.table tbody tr:hover .highlight {
+  background-color: #d4b54e !important;
+  transform: scale(1.02);
+}
+
 .highlight {
   background-color: var(--accent-gold) !important;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .table td {
