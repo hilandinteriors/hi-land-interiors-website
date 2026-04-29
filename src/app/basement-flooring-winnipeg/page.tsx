@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function BasementFlooringPage() {
   return (
-    <main style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+    <main style={{ paddingTop: '120px', paddingBottom: '80px' }}>
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-heading)', lineHeight: 1.1 }}>
           The Best Basement Flooring in <span style={{ color: 'var(--accent-gold)' }}>Winnipeg</span>
         </h1>
-        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6, color: 'var(--text-secondary)' }}>
+        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6 }}>
           Winnipeg basements are notorious for moisture issues, seasonal shifting, and potential flooding. Installing the wrong flooring 
           can lead to mold, warping, and thousands of dollars in replacement costs.
         </p>
@@ -41,10 +41,10 @@ export default function BasementFlooringPage() {
           <li><strong>Warm Underfoot:</strong> The built-in acoustic underlayment provides insulation against cold concrete slabs.</li>
         </ul>
 
-        <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--text-primary)', color: 'var(--bg-primary)', borderRadius: '12px', textAlign: 'center' }}>
+        <div style={{ marginTop: '3rem', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid var(--accent-gold)' }}>
           <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-gold)' }}>Protect Your Basement Investment</h3>
           <p style={{ marginBottom: '2rem' }}>Contact us today for a free estimate on waterproof basement flooring.</p>
-          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block', borderColor: 'var(--bg-primary)' }}>
+          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block' }}>
             Get a Free Basement Quote
           </Link>
         </div>

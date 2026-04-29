@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function SPCVinylFlooringPage() {
   return (
-    <main style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+    <main style={{ paddingTop: '120px', paddingBottom: '80px' }}>
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-heading)', lineHeight: 1.1 }}>
           SPC Vinyl Flooring <span style={{ color: 'var(--accent-gold)' }}>Winnipeg</span>
         </h1>
-        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6, color: 'var(--text-secondary)' }}>
+        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6 }}>
           Hi Land Interiors is Winnipeg’s premier supplier of <strong>Pure SPC (Stone Polymer Composite) Vinyl Flooring</strong>. 
           Engineered specifically for the harsh temperature swings of the Manitoba climate, our SPC vinyl is the ultimate hardwood alternative.
         </p>
@@ -42,10 +42,10 @@ export default function SPCVinylFlooringPage() {
           Winnipeg warehouse located at 50 Mandalay Drive. You can purchase your flooring and pick it up the very same day.
         </p>
 
-        <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--text-primary)', color: 'var(--bg-primary)', borderRadius: '12px', textAlign: 'center' }}>
+        <div style={{ marginTop: '3rem', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid var(--accent-gold)' }}>
           <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-gold)' }}>Get Your Wholesale Quote</h3>
           <p style={{ marginBottom: '2rem' }}>We offer direct-to-consumer wholesale pricing on all our SPC Vinyl products.</p>
-          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block', borderColor: 'var(--bg-primary)' }}>
+          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block' }}>
             Request Pricing & Availability
           </Link>
         </div>

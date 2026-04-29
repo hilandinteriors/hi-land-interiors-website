@@ -8,23 +8,23 @@ export const metadata: Metadata = {
 
 export default function InstallationCostsPage() {
   return (
-    <main style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: 'var(--bg-primary)', color: 'var(--text-primary)' }}>
+    <main style={{ paddingTop: '120px', paddingBottom: '80px' }}>
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-heading)', lineHeight: 1.1 }}>
           Flooring Installation Costs in <span style={{ color: 'var(--accent-gold)' }}>Winnipeg</span>
         </h1>
-        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6, color: 'var(--text-secondary)' }}>
+        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: 1.6 }}>
           At Hi Land Interiors, we believe in complete transparency. While most Winnipeg flooring stores hide their installation 
           rates until they give you an estimate, we proudly display ours because we offer the most competitive professional 
           rates in Manitoba.
         </p>
 
-        <div style={{ padding: '2rem', border: '2px solid var(--accent-gold)', borderRadius: '12px', margin: '3rem 0', backgroundColor: 'var(--bg-card)' }}>
-          <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)', color: 'var(--text-primary)', textAlign: 'center' }}>
+        <div style={{ padding: '2rem', border: '2px solid var(--accent-gold)', borderRadius: '12px', margin: '3rem 0' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)', textAlign: 'center' }}>
             Professional Installation Rate
           </h2>
           <div style={{ fontSize: '4rem', fontWeight: 800, color: 'var(--accent-gold)', textAlign: 'center', marginBottom: '1rem' }}>
-            $0.99<span style={{ fontSize: '1.5rem', color: 'var(--text-primary)' }}>/sq.ft.</span>
+            $0.99<span style={{ fontSize: '1.5rem', color: 'inherit' }}>/sq.ft.</span>
           </div>
           <p style={{ textAlign: 'center', fontWeight: 600 }}>For all standard SPC Luxury Vinyl Plank installations.</p>
         </div>
@@ -51,10 +51,10 @@ export default function InstallationCostsPage() {
           we cut out the middleman. You don't pay retail markup on the product, and you don't pay contractor markup on the labor.
         </p>
 
-        <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--text-primary)', color: 'var(--bg-primary)', borderRadius: '12px', textAlign: 'center' }}>
+        <div style={{ marginTop: '3rem', padding: '2rem', borderRadius: '12px', textAlign: 'center', border: '1px solid var(--accent-gold)' }}>
           <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-gold)' }}>Get Your Exact Price Today</h3>
           <p style={{ marginBottom: '2rem' }}>Contact us with your square footage for an exact, no-hidden-fees quote.</p>
-          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block', borderColor: 'var(--bg-primary)' }}>
+          <Link href="/quote" className="btn-primary" style={{ display: 'inline-block' }}>
             Request an Exact Quote
           </Link>
         </div>
