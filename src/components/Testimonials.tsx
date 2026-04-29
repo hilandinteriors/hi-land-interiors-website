@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Testimonials.module.css";
 
 const reviews = [
@@ -57,6 +57,7 @@ const reviews = [
 ];
 
 export default function Testimonials() {
+  const [hasRevealed, setHasRevealed] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -64,15 +65,17 @@ export default function Testimonials() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
+            setHasRevealed(true);
+            observer.disconnect();
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = sectionRef.current?.querySelectorAll(".animate-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
     return () => observer.disconnect();
   }, []);
@@ -81,8 +84,8 @@ export default function Testimonials() {
     <section className={styles.section} ref={sectionRef}>
       <div className="container">
         <div className={styles.header}>
-          <h2 className="section-title animate-on-scroll">What Our Clients Say</h2>
-          <p className="section-subtitle animate-on-scroll delay-100">
+          <h2 className={`section-title animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}>What Our Clients Say</h2>
+          <p className={`section-subtitle animate-on-scroll delay-100 ${hasRevealed ? "is-visible" : ""}`}>
             Trusted by hundreds of homeowners and professionals across Manitoba.
           </p>
         </div>
@@ -91,7 +94,7 @@ export default function Testimonials() {
           {reviews.map((review, index) => (
             <div 
               key={index} 
-              className={`${styles.card} glass animate-on-scroll`}
+              className={`${styles.card} glass animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}
               style={{ transitionDelay: `${index * 50}ms` }}
             >
               <div className={styles.stars}>★★★★★</div>
@@ -109,7 +112,7 @@ export default function Testimonials() {
             href="https://www.google.com/search?q=Hi+Land+Interiors+Winnipeg#lrd=0x52ea76b00afc1dc3:0x6331a96ed0851888,3" 
             target="_blank" 
             rel="noreferrer" 
-            className={`btn-secondary ${styles.reviewBtn} animate-on-scroll delay-300`}
+            className={`btn-secondary ${styles.reviewBtn} animate-on-scroll delay-300 ${hasRevealed ? "is-visible" : ""}`}
           >
             <span className={styles.googleIcon}>G</span> Review on Google
           </a>
@@ -117,7 +120,7 @@ export default function Testimonials() {
             href="https://maps.apple.com/?q=Hi+Land+Interiors+Winnipeg" 
             target="_blank" 
             rel="noreferrer" 
-            className={`btn-secondary ${styles.appleBtn} animate-on-scroll delay-400`}
+            className={`btn-secondary ${styles.appleBtn} animate-on-scroll delay-400 ${hasRevealed ? "is-visible" : ""}`}
           >
             <span className={styles.appleIcon}></span> Review on Apple Maps
           </a>

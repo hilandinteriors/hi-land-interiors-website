@@ -28,6 +28,7 @@ const faqs = [
 
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [hasRevealed, setHasRevealed] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -35,15 +36,17 @@ export default function FAQ() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
+            setHasRevealed(true);
+            observer.disconnect();
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = sectionRef.current?.querySelectorAll(".animate-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
 
     return () => observer.disconnect();
   }, []);
@@ -70,8 +73,8 @@ export default function FAQ() {
       />
       <div className="container">
         <div className={styles.header}>
-          <h2 className="section-title animate-on-scroll">Frequently Asked Questions</h2>
-          <p className="section-subtitle animate-on-scroll delay-100">
+          <h2 className={`section-title animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}>Frequently Asked Questions</h2>
+          <p className={`section-subtitle animate-on-scroll delay-100 ${hasRevealed ? "is-visible" : ""}`}>
             Everything you need to know about our premium Winnipeg flooring solutions.
           </p>
         </div>
@@ -80,7 +83,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className={`${styles.item} ${activeIndex === index ? styles.active : ""} animate-on-scroll`}
+              className={`${styles.item} ${activeIndex === index ? styles.active : ""} animate-on-scroll ${hasRevealed ? "is-visible" : ""}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <button 
