@@ -57,6 +57,7 @@ export default function B2BHub() {
             src="/images/warehouse_forklift_1776535839835.png"
             alt="Massive SPC Vinyl Flooring Inventory in our Winnipeg Warehouse"
             fill
+            sizes="(max-width: 1024px) 100vw, 40vw"
             className={styles.image}
           />
         </div>

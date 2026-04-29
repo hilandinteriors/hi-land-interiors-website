@@ -2,6 +2,8 @@
   --bg-primary: #FDFDFD; /* Pure Alabaster */
   --bg-secondary: #F7E7CE; /* Champagne */
   --bg-card: #ffffff;
+  --bg-dark: #121212; /* Deep Dark */
+  --background-alabaster: #F8F7F4; /* Warm Alabaster */
   
   --text-primary: #121212; /* Deep Charcoal */
   --text-secondary: #555555;
@@ -16,6 +18,10 @@
   /* Typography */
   --font-heading: var(--font-playfair), Georgia, serif;
   --font-body: var(--font-inter), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -183,34 +189,4 @@ a {
 .thread-top { top: -50px; }
 .thread-bottom { bottom: -50px; }
 
-/* Floating Back to Top */
-.back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 50px;
-  height: 50px;
-  background-color: var(--accent-gold);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 999;
-  cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.back-to-top:hover {
-  transform: translateY(-5px);
-  background-color: var(--text-primary);
-}
 

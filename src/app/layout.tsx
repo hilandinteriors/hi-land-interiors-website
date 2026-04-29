@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hilandinteriors.ca"),
   title: "Hi Land Interiors | Wholesale SPC Vinyl & Basement-Ready Flooring Winnipeg",
   description: "Winnipeg's top-rated wholesale flooring supplier. 100% waterproof SPC vinyl specifically engineered for Manitoba basements. Professional installation starting at $0.99/sq. ft.",
   appleWebApp: {
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Hi Land Interiors",
     images: [
       {
-        url: "/images/hero_flooring_light_1776535022100.png",
+        url: "/images/hero_flooring_ultra_hd.png",
         width: 1200,
         height: 630,
         alt: "Hi Land Interiors Winnipeg Flooring Store",

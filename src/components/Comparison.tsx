@@ -109,7 +109,8 @@ export default function Comparison() {
                 src="/images/flooring_comparison_spc_vinyl_1776697437328.png" 
                 alt="Close up of SPC Vinyl Core" 
                 fill 
-                className="object-cover"
+                sizes="(max-width: 992px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>

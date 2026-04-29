@@ -77,9 +77,15 @@
 .accessoriesCard, .panelsCard {
   margin-top: 3rem;
   padding: 1.5rem;
-  background-color: var(--bg-dark);
+  background-color: #f8f7f4;
   border-left: 4px solid var(--accent-gold);
   border-radius: 0 8px 8px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessoriesCard:hover, .panelsCard:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
 }
 
 .accessoriesCard h4, .panelsCard h4 {

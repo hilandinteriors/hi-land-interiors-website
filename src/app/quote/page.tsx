@@ -134,8 +134,8 @@ export default function QuotePage() {
               <div className={`${styles.bentoBox} glass bento-card`}>
                 <h3>Digital Presence</h3>
                 <div className={styles.bentoSocials}>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-                  <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+                  <a href="https://www.instagram.com/hilandinteriors/" target="_blank" rel="noreferrer">Instagram</a>
+                  <a href="https://www.facebook.com/profile.php?id=61570692601234" target="_blank" rel="noreferrer">Facebook</a>
                 </div>
               </div>
             </div>

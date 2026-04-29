@@ -1,6 +1,6 @@
 .section {
   padding: 3rem 0;
-  background-color: var(--accent-gold); /* Deep Navy */
+  background-color: #1a1a1a;
   color: white;
 }
 
@@ -19,15 +19,16 @@
 }
 
 .icon {
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  background: rgba(212, 175, 55, 0.1);
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  background: rgba(212, 175, 55, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--accent-gold);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  flex-shrink: 0;
 }
 
 .title {
@@ -36,14 +37,14 @@
   font-weight: 800;
   font-size: 1rem;
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
 .label {
   display: block;
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 0.25rem;
 }
 
@@ -55,12 +56,15 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
   .trustItem {
     width: 100%;
     justify-content: flex-start;
-  }
-
-  .number {
-    font-size: 2rem;
   }
 }
