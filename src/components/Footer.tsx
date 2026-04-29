@@ -59,9 +59,44 @@ export default function Footer() {
           ></iframe>
         </div>
       </div>
-      <div className={styles.serviceAreas}>
-        <div className="container">
-          <p><strong>Serving all Winnipeg Neighborhoods:</strong> Bridgwater, Linden Woods, Sage Creek, River Heights, Tuxedo, Charleswood, St. Vital, Transcona, Seven Oaks, and surrounding Manitoba communities.</p>
+      <div className={styles.megaFooter}>
+        <div className={`container ${styles.megaGrid}`}>
+          <div className={styles.megaCol}>
+            <h3>Flooring Categories</h3>
+            <ul>
+              <li><a href="/spc-vinyl-flooring-winnipeg">SPC Vinyl Flooring</a></li>
+              <li><a href="/basement-flooring-winnipeg">Basement Flooring</a></li>
+              <li><a href="/vinyl-flooring-winnipeg">Luxury Vinyl Plank (LVP)</a></li>
+              <li><a href="/flooring-winnipeg">Winnipeg Flooring Options</a></li>
+            </ul>
+          </div>
+          <div className={styles.megaCol}>
+            <h3>Installation & Pricing</h3>
+            <ul>
+              <li><a href="/winnipeg-flooring-installation-costs">Flooring Installation Costs</a></li>
+              <li><a href="/quote">Get a Wholesale Quote</a></li>
+              <li><a href="/quote">Contractor Rates</a></li>
+              <li><a href="/winnipeg-flooring-installation-costs">Cheap Flooring Winnipeg</a></li>
+            </ul>
+          </div>
+          <div className={styles.megaCol}>
+            <h3>Neighborhood Service Areas</h3>
+            <ul>
+              <li><a href="/flooring-winnipeg">Flooring Bridgwater</a></li>
+              <li><a href="/basement-flooring-winnipeg">Linden Woods Basements</a></li>
+              <li><a href="/spc-vinyl-flooring-winnipeg">Tuxedo Renovations</a></li>
+              <li><a href="/flooring-winnipeg">Sage Creek Flooring</a></li>
+            </ul>
+          </div>
+          <div className={styles.megaCol}>
+            <h3>More Service Areas</h3>
+            <ul>
+              <li><a href="/flooring-winnipeg">St. Vital Floors</a></li>
+              <li><a href="/flooring-winnipeg">Charleswood</a></li>
+              <li><a href="/flooring-winnipeg">River Heights</a></li>
+              <li><a href="/flooring-winnipeg">Transcona Vinyl</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={styles.copyright}>
