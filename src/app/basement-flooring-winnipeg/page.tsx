@@ -7,8 +7,21 @@ export const metadata: Metadata = {
 };
 
 export default function BasementFlooringPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.hilandinteriors.ca" },
+      { "@type": "ListItem", "position": 2, "name": "Basement Flooring Winnipeg", "item": "https://www.hilandinteriors.ca/basement-flooring-winnipeg" }
+    ]
+  };
+
   return (
     <main style={{ paddingTop: '120px', paddingBottom: '80px' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-heading)', lineHeight: 1.1 }}>
           The Best Basement Flooring in <span style={{ color: 'var(--accent-gold)' }}>Winnipeg</span>

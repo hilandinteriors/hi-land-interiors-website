@@ -40,7 +40,7 @@ export default function Products() {
           <div className={`${styles.imageWrapper} animate-on-scroll delay-100 bento-card`}>
             <Image
               src="/images/spc_flooring_light_details_1776535042862.png"
-              alt="Close up of Light SPC Vinyl Flooring"
+              alt="Close up of 100% Waterproof Light SPC Vinyl Flooring from our Winnipeg Showroom"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={styles.image}
