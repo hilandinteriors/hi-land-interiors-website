@@ -1,10 +1,15 @@
 .section {
   padding: var(--section-padding);
   background-color: var(--bg-dark);
+  color: white;
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
   position: relative;
   overflow: hidden;
+}
+
+.title {
+  color: white;
 }
 
 /* Add a subtle background pattern or gradient */
