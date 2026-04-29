@@ -23,6 +23,14 @@ const faqs = [
   {
     question: "Can I pick up my order on the same day?",
     answer: "Yes, we pride ourselves on having the largest local inventory in Winnipeg. Most of our 20+ colors are in stock and ready for same-day local pickup from our warehouse.",
+  },
+  {
+    question: "Do you sell Luxury Vinyl Plank (LVP) or just SPC?",
+    answer: "SPC (Stone Polymer Composite) is the highest quality tier of Luxury Vinyl Plank (LVP). When you buy our SPC flooring, you are getting the most durable, 100% waterproof LVP available on the Winnipeg market today.",
+  },
+  {
+    question: "Is SPC vinyl cheaper than hardwood or laminate?",
+    answer: "SPC vinyl offers incredible value. While the initial material cost is highly competitive, the true savings come from its durability. It will not warp like hardwood or swell like laminate, saving you thousands in replacement costs for your Winnipeg home.",
   }
 ];
 

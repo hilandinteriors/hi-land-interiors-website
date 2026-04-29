@@ -9,6 +9,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://www.hilandinteriors.ca/flooring-winnipeg',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.hilandinteriors.ca/vinyl-flooring-winnipeg',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: 'https://www.hilandinteriors.ca/quote',
       lastModified: new Date(),
       changeFrequency: 'monthly',

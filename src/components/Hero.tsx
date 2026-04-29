@@ -65,10 +65,10 @@ export default function Hero() {
           <div className={styles.textStack}>
             <span className={`${styles.badge} animate-on-scroll`}>The Premier SPC Vinyl Supplier</span>
             <h1 className={`${styles.massiveTitle} animate-on-scroll delay-100`}>
-              WINNIPEG'S PREMIER <br/><span>FLOORING STORE</span>
+              WINNIPEG'S PREMIER <br/><span>VINYL FLOORING STORE</span>
             </h1>
             <p className={`${styles.subtitle} animate-on-scroll delay-200`}>
-              Specializing in Luxury Vinyl Plank (LVP) and SPC flooring. Our 100% waterproof, stone-core vinyl is the architect's choice for Winnipeg homes.
+              Specializing in Luxury Vinyl Plank (LVP) and SPC flooring. Our 100% waterproof, stone-core vinyl is the architect's choice for Winnipeg basements and homes. Over 20 colors in stock for same-day pickup.
             </p>
             <div className={`${styles.priceTag} animate-on-scroll delay-200`}>
               Winnipeg Installation starting at $0.99/sq. ft.
